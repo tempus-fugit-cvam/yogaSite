@@ -1,0 +1,25 @@
+{
+  "name": "yogaSite",
+  "version": "1.0.0",
+  "description": "yogaSite",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tempus-fugit-cvam/yogaSite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tempus-fugit-cvam/yogaSite/issues"
+  },
+  "homepage": "https://github.com/tempus-fugit-cvam/yogaSite#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.4"
+  }
+}

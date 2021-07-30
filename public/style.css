@@ -31903,7 +31903,7 @@ video {
     translateY(0px);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 910px) {
   .sm\:container {
     width: 100%;
   }

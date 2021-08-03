@@ -74,3 +74,17 @@
     rotate(-45deg)
     translateY(0px);
 }
+
+/* CARDS */
+
+.cardTemp{
+  background-color: rgb(158, 158, 158);
+}
+
+.cardTemp::before {
+  content: "";
+  background: url(../src/assets/mandala-yoga.png);
+  background-blend-mode: multiply;
+  border-radius: 231px;
+}
+

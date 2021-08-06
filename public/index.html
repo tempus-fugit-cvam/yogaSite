@@ -19,7 +19,7 @@
         <a href="#" class="no-underline py-1">
           <h1 class="font-bold text-lg pr-4 tracking-widest">Santosha Yoga</h1>
         </a>
-        <button id="menuBtn" class="hamburger block sm:hidden focus:outline-none" type="button" onclick="navToggle()";>
+        <button id="menuBtn" class="hamburger block sm:hidden focus:outline-none" type="button" onclick="navToggle()" ;>
           <span class="hamburger__top-bun"></span><span class="hamburger__bottom-bun"></span>
         </button>
       </div>
@@ -37,57 +37,63 @@
           href="#bottom">Mental Coaching</a>
         <a class="text-dark font-bold hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
           href="#bottom">Contact</a>
-        <a class="text-dark font-bold hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2" href="https://www.facebook.com/"><i class="fa fa-fw fa-facebook"></i></a>
-        <a class="text-dark font-bold hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2" href="https://www.instagram.com/"><i class="fa fa-fw fa-instagram"></i></a>
+        <a class="text-dark font-bold hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
+          href="https://www.facebook.com/"><i class="fa fa-fw fa-facebook"></i></a>
+        <a class="text-dark font-bold hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
+          href="https://www.instagram.com/"><i class="fa fa-fw fa-instagram"></i></a>
       </div>
     </nav>
   </header>
 
-<!--hero-->
-<section>
-  <div class="min-h-screen flex hero-image bg-right-bottom bg-cover" style="background-image: url(https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80);">
-    <div class="w-full flex flex-row justify-end z-10 mb-10 mr-10">
-      <div class="flex flex-col items-end justify-end">
-      <!-- <div class="py-4 px-5 my-5"> -->
-      <div class="text-white text-right mb-3 text-2xl md:text-4xl">Peace and strength through meditation and yoga</div>
-    <button class="bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-      Check our classes
-    </button>
-    <!-- </div> -->
-  </div>
-</section>
-
+  <!--hero-->
+  <section>
+    <div class="min-h-screen flex hero-image bg-right-bottom bg-cover"
+      style="background-image: url(https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80);">
+      <div class="w-full flex flex-row justify-end z-10 mb-10 mr-10">
+        <div class="flex flex-col items-end justify-end">
+          <div class="text-white text-right mb-3 text-2xl md:text-4xl">Peace and strength through meditation and yoga
+          </div>
+          <button class="bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+            Check our classes
+          </button>
+        </div>
+  </section>
 
   <!-- Cards -->
-  <section class="grid md:grid-cols-3 gap-10 py-20 mx-10">
+  <section class="grid sm:bg-yellow-400 md:bg-white md:grid-cols-3 gap-10 py-20 mx-10">
 
-    <div class="cardTemp px-3 md:mx-4 mx-1 md:mb-2 mb-8 text-center border-t-8 border-yellow-600" style="background-color: #F6DAA2;">
-      <h1 class="my-4 font-semibold text-xl">HATHA YOGA</h1>
-      <p>This class is perfect for those seeking more balance in life and their yoga practice.</p>
-      <button class="my-4 py-2 w-1/2 self-center text-yellow-800 border-2 rounded border-yellow-600 hover:border-yellow-800 hover:bg-yellow-600">INFO</button>
-      <button class="my-4 py-2 w-1/2 self-center text-yellow-800 border-2 rounded border-yellow-600 hover:border-yellow-800 hover:bg-yellow-600">TIMETABLE</button>
+    <div>
+      
+      <div class="px-3 md:mx-4 mx-1 md:mb-2 mb-8 text-center border-t-8 border-yellow-600 bg-yellow-50">
+        <img src="/src/assets/mandala-yoga.png" alt="mandala" class="-mt-20 object-fit">
+        <h1 class="my-4 font-semibold text-xl">HATHA / VINYASA / YIN YOGA</h1>
+        <p>This class is perfect for those seeking more balance in life and their yoga practice.</p>
+        <button
+          class="my-4 py-2 w-1/2 self-center text-yellow-800 border-2 rounded border-yellow-600 hover:border-yellow-800 hover:bg-yellow-600">INFO</button>
+        <button
+          class="my-4 py-2 w-1/2 self-center text-yellow-800 border-2 rounded border-yellow-600 hover:border-yellow-800 hover:bg-yellow-600">TIMETABLE</button>
+      </div>
     </div>
 
-
-    <div class="px-3 md:mx-4 mx-1 md:mb-2 mb-8 text-center border-t-8 border-yellow-600"
-      style="background-color: #F6DAA2;">
+    <div class="px-3 bg-yellow-200 md:mx-4 mx-1 md:mb-2 mb-8 text-center border-t-8 border-yellow-600">
+      <img src="/src/assets/mandala-yoga.png" alt="mandala" class="z-0 -mt-20 object-fit">
       <h1 class="my-4 font-semibold text-xl">KIDS / TEEN YOGA</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eaque quo consequatur iure, dolor quisquam
-        doloremque ipsam corrupti! Totam unde ut dolore. Corrupti exercitationem, possimus dolorum eligendi sed ab
-        commodi!</p>
-      <button class="my-4 py-2 w-1/2 self-center text-yellow-800 border-2 rounded border-yellow-600 hover:border-yellow-800 hover:bg-yellow-600">INFO</button>
-      <button class="my-4 py-2 w-1/2 self-center text-yellow-800 border-2 rounded border-yellow-600 hover:border-yellow-800 hover:bg-yellow-600">TIMETABLE</button>
+      <p>This class is perfect for those seeking more balance in life and their yoga practice.</p>
+      <button
+        class="my-4 py-2 w-1/2 self-center text-yellow-800 border-2 rounded border-yellow-600 hover:border-yellow-800 hover:bg-yellow-600">INFO</button>
+      <button
+        class="my-4 py-2 w-1/2 self-center text-yellow-800 border-2 rounded border-yellow-600 hover:border-yellow-800 hover:bg-yellow-600">TIMETABLE</button>
     </div>
 
 
-    <div class="px-3 md:mx-4 mx-1 md:mb-2 mb-8 text-center border-t-8 border-yellow-600"
-      style="background-color: #F6DAA2;">
-      <h1 class="my-4 font-semibold text-xl">MENTAL COUCHING</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eaque quo consequatur iure, dolor quisquam
-        doloremque ipsam corrupti! Totam unde ut dolore. Corrupti exercitationem, possimus dolorum eligendi sed ab
-        commodi!</p>
-      <button class="my-4 py-2 px-4 w-1/2 self-center text-yellow-800 border-2 rounded border-yellow-600 hover:border-yellow-800 hover:bg-yellow-600">INFO</button>
-      <button class="my-4 py-2 px-4 w-1/2 self-center text-yellow-800 border-2 rounded border-yellow-600 hover:border-yellow-800 hover:bg-yellow-600">TIMETABLE</button>
+    <div class="px-3 md:mx-4 mx-1 md:mb-2 mb-8 text-center border-t-8 border-yellow-600 bg-yellow-200">
+      <img src="/src/assets/mandala-yoga.png" alt="mandala" class="z-0 -mt-20 object-fit">
+      <h1 class="my-4 font-semibold text-xl">MENTAL COACHING</h1>
+      <p>This class is perfect for those seeking more balance in life and their yoga practice.</p>
+      <button
+        class="my-4 py-2 px-4 w-1/2 self-center text-yellow-800 border-2 rounded border-yellow-600 hover:border-yellow-800 hover:bg-yellow-600">INFO</button>
+      <button
+        class="my-4 py-2 px-4 w-1/2 self-center text-yellow-800 border-2 rounded border-yellow-600 hover:border-yellow-800 hover:bg-yellow-600">TIMETABLE</button>
     </div>
 
   </section>
@@ -115,6 +121,7 @@
 
     </div>
   </footer>
+
   <script src="/yogaSite/app.js"></script>
 </body>
 

@@ -5,19 +5,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/public/style.css">
+  <link rel="stylesheet" href="/tailwind.css">
+  <link rel="stylesheet" href="/src/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Yoga Website</title>
 </head>
 
 <body>
-  <header id="top" class="w-full flex flex-col fixed sm:relative bg-white pin-t pin-r pin-l">
+  <header id="top" class="w-full flex flex-col fixed sm:relative pin-t pin-r pin-l bg-gradient-to-b from-brand-deep-champagne to-white">
     <nav id="site-menu"
-      class="flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-white shadow sm:shadow-none border-t-4 border-red-900">
+      class="flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 shadow sm:shadow-none border-t-4 border-red-900">
       <div
         class="w-full sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center">
         <a href="#" class="no-underline py-1">
-          <h1 class="font-bold text-lg pr-4 tracking-widest">Santosha Yoga</h1>
+          <h1 class="font-bold text-brand-gunmetal text-lg pr-4 tracking-widest">Santosha Yoga</h1>
         </a>
         <button id="menuBtn" class="hamburger block sm:hidden focus:outline-none" type="button" onclick="navToggle()";>
           <span class="hamburger__top-bun"></span><span class="hamburger__bottom-bun"></span>

@@ -1,5 +1,7 @@
 var nav = document.getElementById('site-menu');
 var header = document.getElementById('top');
+var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+var rootElement = document.documentElement;
 
 window.addEventListener('scroll', function() {
   if (window.scrollY >=400) { // adjust this value based on site structure and header image height
@@ -18,4 +20,18 @@ function navToggle() {
         btn.classList.toggle('open');
         nav.classList.toggle('flex');
         nav.classList.toggle('hidden');
+    };
+
+    function scrollToTop() { 
+      // scroll to top logic
+      rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      })
+      
     }
+    scrollToTopBtn.addEventListener("click", scrollToTop)
+
+  
+
+    

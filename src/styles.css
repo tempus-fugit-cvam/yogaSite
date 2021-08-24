@@ -2,13 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* custom non-Tailwind CSS */
 
 @media (max-width: 576px) {
-    .content {
-        padding-top: 51px;
-    }
+  .content {
+    padding-top: 51px;
+  }
 }
 
 @media (min-width: 577px) {
@@ -17,11 +16,11 @@
   }
 
   .nav-sticky {
-    position: fixed!important;
+    position: fixed !important;
     min-width: 100%;
     top: 0;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
-    transition: all .25s ease-in;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.25s ease-in;
     z-index: 1;
   }
 }
@@ -37,7 +36,7 @@
 
 .hamburger__top-bun,
 .hamburger__bottom-bun {
-  content: '';
+  content: "";
   position: absolute;
   width: 24px;
   height: 2px;
@@ -64,20 +63,16 @@
 }
 
 .open .hamburger__top-bun {
-  transform:
-    rotate(45deg)
-    translateY(0px);
+  transform: rotate(45deg) translateY(0px);
 }
 
 .open .hamburger__bottom-bun {
-  transform:
-    rotate(-45deg)
-    translateY(0px);
+  transform: rotate(-45deg) translateY(0px);
 }
 
 /* CARDS */
 
-.cardTemp{
+.cardTemp {
   background-color: rgb(158, 158, 158);
 }
 
@@ -87,7 +82,6 @@
   background-blend-mode: multiply;
   border-radius: 231px;
 }
-
 
 #scrollToTopBtn {
   background-color: black;
@@ -99,4 +93,19 @@
   font-size: 16px;
   line-height: 48px;
   width: 48px;
+}
+
+#courseCard {
+  background-color: #333;
+}
+
+#courseCard::before {
+  content: '';
+  background-color: #9b7322;
+  height: 100px;
+  width: 100px;
+  display: block;
+  position: absolute;
+  z-index: 5;
+  margin-bottom: 50px;
 }

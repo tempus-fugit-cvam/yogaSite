@@ -95,17 +95,4 @@
   width: 48px;
 }
 
-#courseCard {
-  background-color: #333;
-}
 
-#courseCard::before {
-  content: '';
-  background-color: #9b7322;
-  height: 100px;
-  width: 100px;
-  display: block;
-  position: absolute;
-  z-index: 5;
-  margin-bottom: 50px;
-}

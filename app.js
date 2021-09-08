@@ -1,5 +1,5 @@
-var nav = document.getElementById('site-menu');
-var header = document.getElementById('top');
+var nav = document.getElementById("site-menu");
+var header = document.getElementById("top");
 var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 var rootElement = document.documentElement;
 
@@ -14,24 +14,31 @@ var rootElement = document.documentElement;
 // });
 
 function navToggle() {
-        var btn = document.getElementById('menuBtn');
-        var nav = document.getElementById('menu');
+  var btn = document.getElementById("menuBtn");
+  var nav = document.getElementById("menu");
 
-        btn.classList.toggle('open');
-        nav.classList.toggle('flex');
-        nav.classList.toggle('hidden');
-    };
+  btn.classList.toggle("open");
+  nav.classList.toggle("flex");
+  nav.classList.toggle("hidden");
+}
 
-    function scrollToTop() { 
-      // scroll to top logic
-      rootElement.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      })
-      
-    }
-    scrollToTopBtn.addEventListener("click", scrollToTop)
+function scrollToTop() {
+  // scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+scrollToTopBtn.addEventListener("click", scrollToTop);
 
-  
+//Light Gallery Code
 
-    
+lightGallery(document.getElementById("lightgallery"), {
+  plugins: [lgZoom, lgThumbnail],
+  licenseKey: "0000-0000-000-0000",
+  speed: 500,
+});
+
+lightGallery(document.getElementById("animated-thumbnails-gallery"), {
+  thumbnail: true,
+});

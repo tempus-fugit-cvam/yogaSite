@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/public/style.css">
+  <link rel="stylesheet" href="/src/timetable.css">
   <link rel="stylesheet" href="/tailwind.css">
   <link rel="stylesheet" href="/src/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,7 +14,8 @@
 </head>
 
 <body>
-  <header id="top" class="w-full flex flex-col align-middle fixed sm:relative bg-gradient-to-b from-brand-deep-champagne to-white">
+  <header id="top"
+    class="w-full flex flex-col align-middle fixed sm:relative bg-gradient-to-b from-brand-deep-champagne to-white">
     <nav id="site-menu"
       class="flex flex-col sm:flex-row w-full justify-between align-middle items-center px-4 sm:px-6 py-4 shadow sm:shadow-none">
       <div
@@ -21,7 +23,7 @@
         <a href="/public/index.html" class="no-underline py-1">
           <h1 class="font-bold text-brand-gunmetal text-lg pr-4 tracking-widest">Santosha Yoga</h1>
         </a>
-        <button id="menuBtn" class="hamburger block sm:hidden focus:outline-none" type="button" onclick="navToggle()";>
+        <button id="menuBtn" class="hamburger block sm:hidden focus:outline-none" type="button" onclick="navToggle()" ;>
           <span class="hamburger__top-bun"></span><span class="hamburger__bottom-bun"></span>
         </button>
       </div>
@@ -37,7 +39,7 @@
           href="kidsteenyoga.html">Kids/Teen Yoga</a>
         <a class="text-black font-bold hover:text-brand-dark-salmon text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
           href="mentalcoaching.html">Mental Coaching</a>
-          <a class="text-black font-bold hover:text-brand-dark-salmon text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
+        <a class="text-black font-bold hover:text-brand-dark-salmon text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
           href="massageklangschalen.html">Massage & Klangschalen</a>
         <a class="text-black font-bold hover:text-brand-dark-salmon text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
           href="#contact">Contact</a>
@@ -57,7 +59,8 @@
         <div class="flex flex-col items-end justify-end">
           <div class="text-white text-right mb-3 text-2xl md:text-4xl">Peace and strength through meditation and yoga
           </div>
-          <button class="bg-opacity-0 border-2 border-brand-gunmetal hover:bg-blue-700 transition duration-500 ease-in text-white font-bold py-2 px-4 rounded-full">
+          <button
+            class="bg-opacity-0 border-2 border-brand-gunmetal hover:bg-blue-700 transition duration-500 ease-in text-white font-bold py-2 px-4 rounded-full">
             Check our classes
           </button>
         </div>
@@ -71,7 +74,8 @@
       <div class="px-3 md:mx-4 mx-1 md:mb-2 mb-8 text-center border-t-8 border-yellow-600 bg-brand-deep-champagne">
         <img src="/src/assets/mandala-yoga.png" alt="mandala" class="-mt-20 object-fit">
         <h1 class="my-4 font-semibold sm:text-sm lg:text-lg whitespace-nowrap">HATHA / VINYASA / YIN YOGA</h1>
-        <p class="md:text-sm lg:text-base">This class is perfect for those seeking more balance in life and their yoga practice.</p>
+        <p class="md:text-sm lg:text-base">This class is perfect for those seeking more balance in life and their yoga
+          practice.</p>
         <button
           class="my-4 py-2 w-10/12 self-center text-white border-2 rounded border-white hover:border-yellow-800 hover:bg-yellow-600 transition duration-200 ease-in">INFO</button>
         <button
@@ -79,10 +83,12 @@
       </div>
     </div>
 
-    <div class="px-3 bg-yellow-200 md:mx-4 mx-1 md:mb-2 mb-8 text-center border-t-8 border-yellow-600 bg-brand-deep-champagne">
+    <div
+      class="px-3 bg-yellow-200 md:mx-4 mx-1 md:mb-2 mb-8 text-center border-t-8 border-yellow-600 bg-brand-deep-champagne">
       <img src="/src/assets/mandala-yoga.png" alt="mandala" class="z-0 -mt-20 object-fit">
       <h1 class="my-4 font-semibold sm:text-sm lg:text-lg">KIDS / TEEN YOGA</h1>
-      <p class="md:text-sm lg:text-base">This class is perfect for those seeking more balance in life and their yoga practice.</p>
+      <p class="md:text-sm lg:text-base">This class is perfect for those seeking more balance in life and their yoga
+        practice.</p>
       <button
         class="my-4 py-2 w-10/12 self-center text-white border-2 rounded border-white hover:border-yellow-800 hover:bg-yellow-600 transition duration-200 ease-in">INFO</button>
       <button
@@ -93,7 +99,8 @@
     <div class="px-3 md:mx-4 mx-1 md:mb-2 mb-8 text-center border-t-8 border-yellow-600 bg-brand-deep-champagne">
       <img src="/src/assets/mandala-yoga.png" alt="mandala" class="z-0 -mt-20 object-fit">
       <h1 class="my-4 font-semibold sm:text-sm lg:text-lg">MENTAL COACHING</h1>
-      <p class="md:text-sm lg:text-base">This class is perfect for those seeking more balance in life and their yoga practice.</p>
+      <p class="md:text-sm lg:text-base">This class is perfect for those seeking more balance in life and their yoga
+        practice.</p>
       <button
         class="my-4 py-2 w-10/12 self-center text-white border-2 rounded border-white hover:border-yellow-500 hover:bg-yellow-600 transition duration-200 ease-in">INFO</button>
       <button
@@ -101,6 +108,185 @@
     </div>
 
   </section>
+
+  <!--Timetable Area -->
+
+  <section id="timetable">
+    <div class="timetable-container">
+      <ol class="timetable">
+
+
+        <li id="Monday" class="day-title"> <abbr title="Montag">Mo</abbr>
+        </li>
+
+        <div></div>
+
+        <li class="danceclass orange beginner">
+          <span class="class-title">HipHop<span class="class-title-sm"> Kids</span></span>
+          <span class="class-time ">17-18 Uhr</span><span class="class-lvl"></span>
+          <span class="class-teacher">Kerstin (7-8 J.)</span>
+        </li>
+
+        <li class="danceclass orange beginner">
+          <span class="class-title">HipHop<span class="class-title-sm"> Kids</span></span>
+          <span class="class-time">18-19 Uhr</span>
+          <span class="class-teacher">Kerstin (7-10 J.)</span>
+        </li>
+
+        <li class="danceclass green beginner">
+          <span class="class-title">Ü20 HipHop</span>
+          <span class="class-time">19-20 Uhr</span>
+          <span class="class-teacher">Simon (ab 20 J.)</span>
+        </li>
+
+        <li class="danceclass cyan">
+          <span class="class-title">Zumba</span>
+          <span class="class-time">20-21 Uhr</span>
+          <span class="class-teacher">Eva</span>
+        </li>
+
+
+        <li id="Tuesday" class="day-title"> <abbr title="Dienstag">Di</abbr>
+        </li>
+
+        <div></div>
+
+        <li class="danceclass pink beginner">
+          <span class="class-title">Female
+            <span class="class-title-sm"> HipHop</span></span>
+          <span class="class-time">17-18 Uhr</span>
+          <span class="class-teacher">Matze (ab 13 J.)</span>
+        </li>
+
+        <li class="danceclass pink medium">
+          <span class="class-title">Female<span class="class-title-sm"> HipHop</span></span>
+          <span class="class-time">18-19 Uhr</span>
+          <span class="class-teacher">Yul (ab 13 J.)</span>
+        </li>
+
+        <li class="danceclass pink advanced">
+          <span class="class-title">Female<span class="class-title-sm"> HipHop</span></span>
+          <span class="class-time">19-20 Uhr</span>
+          <span class="class-teacher">Laura (ab 16 J.)</span>
+        </li>
+
+        <li class="danceclass green beginner">
+          <span class="class-title">Ü20 HipHop</span>
+          <span class="class-time">20-21 Uhr</span>
+          <span class="class-teacher">Jenny (ab 20 J.)</span>
+        </li>
+
+
+        <li id="Wednesday" class="day-title"> <abbr title="Mittwoch">Mi</abbr>
+        </li>
+
+        <div></div>
+
+        <li class="danceclass orange-dark beginner">
+          <span class="class-title">Breakdance</span>
+          <span class="class-time">17-18 Uhr</span>
+          <span class="class-teacher">Dominik/Kevin (ab&nbsp;13&nbsp;J.)</span>
+        </li>
+
+        <li class="danceclass orange-medium beginner">
+          <span class="class-title">Breakdance<span class="class-title-sm"> Kids</span></span>
+          <span class="class-time">18-19 Uhr</span>
+          <span class="class-teacher">Dominik (5-8 J.)</span>
+        </li>
+
+        <li class="danceclass orange-medium beginner">
+          <span class="class-title">Breakdance<span class="class-title-sm"> Kids</span></span>
+          <span class="class-time">19-20 Uhr</span>
+          <span class="class-teacher">Dominik (9-12 J.)</span>
+        </li>
+
+        <div></div>
+
+
+        <li id="Thursday" class="day-title"> <abbr title="Donnerstag">Do</abbr>
+        </li>
+
+        <div></div>
+
+        <li class="danceclass purple beginner">
+          <span class="class-title">Modern</span>
+          <span class="class-time">17-18 Uhr</span>
+          <span class="class-teacher">Yul (ab 13 J.)</span>
+        </li>
+
+        <li class="danceclass pink beginner">
+          <span class="class-title">Female<span class="class-title-sm"> HipHop</span></span>
+          <span class="class-time">18-19 Uhr</span>
+          <span class="class-teacher">Yul (ab 13 J.)</span>
+        </li>
+
+        <li class="danceclass pink advanced">
+          <span class="class-title">Female<span class="class-title-sm"> HipHop</span></span>
+          <span class="class-time">19-20 Uhr</span>
+          <span class="class-teacher">Andi (ab 13 J.)</span>
+        </li>
+
+        <li class="danceclass purple">
+          <span class="class-title">Pole Dance</span>
+          <span class="class-time">20-21 Uhr</span>
+          <span class="class-teacher">Andi (ab 16 J.)</span>
+        </li>
+
+
+        <li id="Friday" class="day-title"> <abbr title="Freitag">Fr</abbr>
+        </li>
+
+        <li class="danceclass green-light beginner">
+          <span class="class-title">HipHop</span>
+          <span class="class-time">15-16 Uhr</span>
+          <span class="class-teacher">Simon (ab 13 J.)</span>
+        </li>
+
+        <li class="danceclass green-light medium">
+          <span class="class-title">HipHop</span>
+          <span class="class-time">16-17 Uhr</span>
+          <span class="class-teacher">Simon (ab 13 J.)</span>
+        </li>
+
+        <li class="danceclass green beginner">
+          <span class="class-title">HipHop</span>
+          <span class="class-time">17-18 Uhr</span>
+          <span class="class-teacher">Danny (ab 13 J.)</span>
+        </li>
+
+        <li class="danceclass green medium">
+          <span class="class-title">HipHop</span>
+          <span class="class-time">18-19 Uhr</span>
+          <span class="class-teacher">Danny (ab 13 J.)</span>
+        </li>
+
+        <li class="danceclass green advanced">
+          <span class="class-title">HipHop</span>
+          <span class="class-time">19-20 Uhr</span>
+          <span class="class-teacher">Danny (ab 13 J.)</span>
+        </li>
+
+
+        <li id="Saturday" class="day-title"> <abbr title="Samstag">Sa</abbr>
+        </li>
+
+        <li class="danceclass green">
+          <span class="coming-soon">coming soon</span>
+        </li>
+
+
+        <li id="Sunday" class="day-title"> <abbr title="Sonntag">So</abbr>
+        </li>
+
+        <li class="danceclass green">
+          <span class="class-title">Companies</span>
+          <span class="class-teacher">Nur auf Empfehlung oder Einladung.</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!--End of Timetable Area -->
 
   <!-- Footer -->
   <footer class="footer bg-brand-antique-white relative pt-1 border-b-2" id="contact">
@@ -110,27 +296,38 @@
         <div class="mt-8 sm:mt-0 sm:w-full sm:px flex flex-col md:flex-row justify-between">
           <div class="flex flex-col">
             <span class="font-bold text-brand-gunmetal uppercase mb-2">Santosha Yoga</span>
-              <div class="my-2 text-brand-gunmetal">Aletsch Spa <br>
+            <div class="my-2 text-brand-gunmetal">Aletsch Spa <br>
               Furkastrasse 90 <br>
               3904 Naters <br> <br>
-              <span class="my-2"><a href="tel:+41 (0)78 872 50 60" class="text-brand-gunmetal text-md hover:text-blue-500">+41 (0)78 872 50 60 (Nadja)</a></span> <br>
-              <span class="my-2"><a href="tel:+41 (0)79 329 29 31" class="text-brand-gunmetal text-md hover:text-blue-500">+41 (0)79 329 29 31 (Roger)</a></span> <br>
-              <span class="my-2"><a href="mailto: info@santoshayoga.ch" class="text-brand-gunmetal text-md hover:text-blue-500">info@santoshayoga.ch</a></span>
+              <span class="my-2"><a href="tel:+41 (0)78 872 50 60"
+                  class="text-brand-gunmetal text-md hover:text-blue-500">+41 (0)78 872 50 60 (Nadja)</a></span> <br>
+              <span class="my-2"><a href="tel:+41 (0)79 329 29 31"
+                  class="text-brand-gunmetal text-md hover:text-blue-500">+41 (0)79 329 29 31 (Roger)</a></span> <br>
+              <span class="my-2"><a href="mailto: info@santoshayoga.ch"
+                  class="text-brand-gunmetal text-md hover:text-blue-500">info@santoshayoga.ch</a></span>
             </div>
           </div>
           <div class="flex flex-col">
             <span class="font-bold text-brand-gunmetal uppercase mt-4 md:mt-0 mb-2">Navigation</span>
-            <span class="my-2"><a href="index.html" class="text-brand-gunmetal text-md hover:text-blue-500">Home</a></span>
-            <span class="my-2"><a href="about.html" class="text-brand-gunmetal  text-md hover:text-blue-500">About</a></span>
-            <span class="my-2"><a href="courses.html" class="text-brand-gunmetal text-md hover:text-blue-500">Courses</a></span>
-            <span class="my-2"><a href="kidsteenyoga.html" class="text-brand-gunmetal text-md hover:text-blue-500">Kids/Teen Yoga</a></span>
-            <span class="my-2"><a href="mentalcoaching.html" class="text-brand-gunmetal text-md hover:text-blue-500">Mental Coaching</a></span>
-            <span class="my-2"><a href="contact.html" class="text-brand-gunmetal text-md hover:text-blue-500">Contact</a></span>
+            <span class="my-2"><a href="index.html"
+                class="text-brand-gunmetal text-md hover:text-blue-500">Home</a></span>
+            <span class="my-2"><a href="about.html"
+                class="text-brand-gunmetal  text-md hover:text-blue-500">About</a></span>
+            <span class="my-2"><a href="courses.html"
+                class="text-brand-gunmetal text-md hover:text-blue-500">Courses</a></span>
+            <span class="my-2"><a href="kidsteenyoga.html"
+                class="text-brand-gunmetal text-md hover:text-blue-500">Kids/Teen Yoga</a></span>
+            <span class="my-2"><a href="mentalcoaching.html"
+                class="text-brand-gunmetal text-md hover:text-blue-500">Mental Coaching</a></span>
+            <span class="my-2"><a href="contact.html"
+                class="text-brand-gunmetal text-md hover:text-blue-500">Contact</a></span>
           </div>
           <div class="flex flex-col">
             <span class="font-bold text-brand-gunmetal uppercase mt-4 md:mt-0 mb-2">Social</span>
-            <span class="my-2"><a href="https://www.facebook.com/" class="text-brand-gunmetal text-md hover:text-blue-500">Facebook</a></span>
-            <span class="my-2"><a href="https://www.instagram.com/" class="text-brand-gunmetal text-md hover:text-blue-500">Instagram</a></span>
+            <span class="my-2"><a href="https://www.facebook.com/"
+                class="text-brand-gunmetal text-md hover:text-blue-500">Facebook</a></span>
+            <span class="my-2"><a href="https://www.instagram.com/"
+                class="text-brand-gunmetal text-md hover:text-blue-500">Instagram</a></span>
           </div>
         </div>
         <!-- <div>
@@ -145,14 +342,15 @@
     </div>
     <div class="container mx-auto px-6">
       <div class="mt-16 border-t-2 border-gray-300 flex flex-col items-center">
-          <div class="sm:w-2/3 text-center py-6">
-              <p class="text-sm text-brand-gunmetal font-bold mb-2">
-                  © 2021 - by <a href="https://github.com/mafromist">Mafromist</a> & <a href="https://github.com/vcory">VCory</a> 
-              </p>
-          </div>
-          <button id="scrollToTopBtn" class="mb-4">Up</button>
+        <div class="sm:w-2/3 text-center py-6">
+          <p class="text-sm text-brand-gunmetal font-bold mb-2">
+            © 2021 - by <a href="https://github.com/mafromist">Mafromist</a> & <a
+              href="https://github.com/vcory">VCory</a>
+          </p>
+        </div>
+        <button id="scrollToTopBtn" class="mb-4">Up</button>
       </div>
-  </div>
+    </div>
   </footer>
 
   <script src="../app.js"></script>

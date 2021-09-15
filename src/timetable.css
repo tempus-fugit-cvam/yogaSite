@@ -1,0 +1,221 @@
+
+  
+  .timetable-container {
+      max-width: 1200px;
+      padding: 20px 0 20px 0;
+      margin-right: auto;
+      margin-left: auto;
+      
+  }
+  
+  .timetable {
+    padding: 0;
+  }
+  
+  .timetable > li {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    padding: 0.3rem;
+    margin: 1px;
+  }
+   .timetable > li abbr {
+      font-size: 0;
+    }
+    .timetable > li abbr:after {
+      content: attr(title);
+      font-size: 4rem;
+    }
+  
+    .timetable > li:before {
+      font-size: 1rem;
+    }
+  @supports (display: grid)
+  {
+    .timetable > li {
+      max-width: 100%;
+    } 
+  }
+  .timetable .day-title {
+    border: none;
+    align-items: center;
+    width: 100%;
+  }
+  .class-title {
+    font-style: italic;
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+  }
+  .class-title-sm {
+    font-size: 0.9rem;
+  }
+  .class-time {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+  }
+  
+  .class-teacher {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.9rem;
+  }
+  
+  .coming-soon {
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 10px;
+    padding-left: 0px;
+    text-transform: uppercase;
+  }
+  .beginner:after {
+    content: "\24B6\FE0E";
+    position: absolute;
+    font-size: 28px;
+    right: 5px;
+  }
+  .medium:after {
+    content: "\24C2\FE0E";
+    position: absolute;
+    font-size: 28px;
+    right: 5px;
+  }
+  .advanced:after {
+    content: "\24BB\FE0E";
+    position: absolute;
+    font-size: 28px;
+    right: 5px;
+  }
+  
+  .timetable .purple {
+    background: #bd70bdff;
+  }
+  .timetable .orange {
+    background: #f8a628ff;
+  }
+  .timetable .orange-medium {
+    background: #f58c1eff;
+  }
+  .timetable .green {
+    background: #57bf33ff;
+  }
+  .timetable .green-light {
+    background: #97d99eff;
+  }
+  .timetable .cyan {
+    background: #78d1deff;
+  }
+  .timetable .orange-dark {
+    background: #f36b35ff;
+  }
+  .timetable .pink {
+    background: #f03a4fff;
+  }
+  .timetable .danceclass {
+    box-shadow: 0 0 1x rgba(0,0,0,.1);
+  }
+  
+  
+  
+  @media only screen and (min-width: 480px) and (max-width: 1199px) {
+    .timetable {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(/*330 */210px, 1fr) );
+      grid-auto-rows: minmax( min-content, 1fr);
+      grid-gap: 5px;
+    }
+   .timetable .day-title {
+    border: none;
+    align-items: center;
+     grid-column-start: 1;
+     grid-column-end: -1; }
+    /*
+    .class-title {
+      font-size: 3rem;
+      
+    }
+    .class-title-sm {
+      font-size: 2.5rem;
+    }
+    .class-time {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    .class-teacher,
+    .coming-soon {
+      font-size: 2rem;
+      font-weight: 600;
+    } */
+    .beginner:after,
+    .medium:after,
+    .advanced:after {
+      font-size: 2.8rem;
+    }
+    .timetable>li {
+    }
+    .timetable > li abbr {
+      font-size: 0;
+    }
+    .timetable > li abbr:after {
+      content: attr(title);
+      font-size: 4rem;
+    }
+  
+    .timetable > li:before {
+      font-size: 1rem;
+    }
+    .timetable > div {
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .timetable {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(150px, 180px));
+      grid-template-rows: repeat(6, 1fr);
+      grid-auto-rows: auto;
+      grid-gap: 6px;
+      grid-auto-flow: column;
+    }
+    .day-title {
+      grid-row-end: 2;
+    }
+    .timetable > li {
+      line-height: 1.15rem;
+    }
+    .timetable > li abbr {
+      font-size: 3rem;
+    }
+    .timetable > li abbr:after {
+      content: attr(title);
+      font-size: 0;
+    }
+  
+    .timetable .danceclass {
+    
+  transition: all 0.35s ease;
+     
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .timetable .danceclass:hover {
+      transition: all .2s ease-out;
+      -webkit-transform: scale(0.96);
+      transform: scale(0.96);
+      cursor: pointer;
+      font-smoothing: antialiased;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  
+    }
+    
+  }
+  
